@@ -1,0 +1,32 @@
+{
+    "geode": "5.8.2",
+    "gd": {
+        "win":     "2.2081",
+        "mac":     "2.2081",
+        "android": "2.2081",
+        "ios":     "2.2081"
+    },
+    "id": "reparked.gmdsync",
+    "name": "gmdsync",
+    "version": "v1.0.0",
+    "developer": "reparked",
+    "description": "restarts reaper audio when you die in gd",
+    "repository": "https://github.com/reparking-parker/gmdsync",
+    "tags": ["utility"],
+    "settings": {
+        "enabled": {
+            "name": "Enabled",
+            "description": "Whether to send OSC commands to REAPER on level reset.",
+            "type": "bool",
+            "default": true
+        },
+        "port": {
+            "name": "OSC Port",
+            "description": "UDP port configured in REAPER OSC Control Surface.",
+            "type": "int",
+            "default": 8000,
+            "min": 1,
+            "max": 65535
+        }
+    }
+}
