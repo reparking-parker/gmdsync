@@ -16,7 +16,7 @@
     "settings": {
         "enabled": {
             "name": "Enabled",
-            "description": "Whether to send OSC commands to REAPER on level reset.",
+            "description": "Whether to send OSC commands to REAPER.",
             "type": "bool",
             "default": true
         },
@@ -27,6 +27,22 @@
             "default": 8000,
             "min": 1,
             "max": 65535
+        },
+        "speed": {
+            "name": "Speed Multiplier",
+            "description": "REAPER playback speed (1.0 = normal).",
+            "type": "float",
+            "default": 1.0,
+            "min": 0.1,
+            "max": 4.0
+        },
+        "audio-offset-ms": {
+            "name": "Audio Offset (ms)",
+            "description": "Latency offset applied to audio playback in milliseconds.",
+            "type": "float",
+            "default": 0.0,
+            "min": -200.0,
+            "max": 200.0
         }
     }
 }
